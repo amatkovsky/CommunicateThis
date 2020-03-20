@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "985659322675",
+    "firebase_url": "https://communicate-this.firebaseio.com",
+    "project_id": "communicate-this",
+    "storage_bucket": "communicate-this.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985659322675:android:effbf0bc83f985a0a74e46",
+        "android_client_info": {
+          "package_name": "tk.sidius.communicate_this"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985659322675-afdfkj4nehiasc2cfu4emmdeemk173sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANCq96koTS92xacL3duLM38-ETdbC41Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985659322675-afdfkj4nehiasc2cfu4emmdeemk173sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

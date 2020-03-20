@@ -1,0 +1,6 @@
+enable-experiment:
+  - extension-methods
+
+analyzer:
+  strong-mode:
+    implicit-casts: false

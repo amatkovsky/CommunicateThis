@@ -172,7 +172,7 @@ Pods/
 
 ### Dart ###
 # See https://www.dartlang.org/tools/private-files.html
-
+.dart_tool/
 # Files and directories created by pub
 .packages
 .pub/
@@ -352,3 +352,6 @@ build/
 # End of https://www.gitignore.io/api/dart,swift,xcode,android,intellij,cocoapods,objective-c,androidstudio
 
 **/flutter_export_environment.sh
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea
