@@ -1,5 +1,5 @@
 import 'package:communicate_this/QuestionListWidget.dart';
-import 'package:communicate_this/QuestionsRepository.dart';
+import 'package:communicate_this/QuizListWidget.dart';
 import 'package:communicate_this/bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MyHomePage(title: "Quizes"),
+        QuestionListWidget.route: (context) {
+          final args = ModalRoute.of(context).settings.arguments
+              as QuestionListScreenArguments;
+          return BlocProvider(
+              bloc: QuestionListBloc(args.quizId), child: QuestionListWidget());
+        }
+      },
     );
   }
 }
@@ -30,9 +39,7 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: BlocProvider(
-            bloc: QuestionListBloc(),
-            child: QuestionListWidget()),
+        child: BlocProvider(bloc: QuizListBloc(), child: QuizListWidget()),
       ),
     );
   }

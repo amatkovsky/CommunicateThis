@@ -31,3 +31,10 @@ class Question {
 
   Question(this.id, this.question);
 }
+
+class Quiz {
+  final String id;
+  final String name;
+
+  Quiz(this.id, this.name);
+}
